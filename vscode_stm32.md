@@ -1,23 +1,23 @@
-# 安装 Vscode
+## 安装 Vscode
 [[官网]](https://code.visualstudio.com/) 微软开发的代码编辑器
 
-# 安装 OpenOCD
+## 安装 OpenOCD
 > [[官网]](https://openocd.org/pages/getting-openocd.html) 烧录和调试工具
 
 * 在 OpenOCD 安装目录 `openocd\scripts\interface` 下存放了调试器配置 stlinklink/smsis-dap 
 * 在 OpenOCD 安装目录 `openocd\scripts\target` 下存放了芯片配置对应相关的处理器内核
 
 
-# 安装 ToolChain
+## 安装 ToolChain
 > [[官网]](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) 编译和调试工具链
 
-# 安装三个 vs 插件
+## 安装三个 vs 插件
 * STM32 VS code extension (STM32 支持插件)
 * C/C++ extension pack（语言支持）
 * cortext-debug （调试支持）
 
 
-# 配置编辑器 (setting.json)
+## 配置编辑器 (setting.json)
  ```json
     {
         "cortex-debug.gdbPath": "C:\\ST\\STM32CubeIDE_1.15.0\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256\\tools\\bin\\arm-none-eabi-gdb.exe",
@@ -27,9 +27,9 @@
  ```
 
 
-# 把 OpenOCD 和 ToolChain 的 bin 目录加入环境变量
+## 把 OpenOCD 和 ToolChain 的 bin 目录加入环境变量
 
-# 烧录命令
+## 烧录命令
 ```
 Openocd -f 'C:\openocd\openocd\scripts\interface\cmsis-dap.cfg' -f 'C:\openocd\openocd\scripts\target\stm32f7x.cfg' -c "program D:\\STM32\\Projects\\beep\\build\\debug\\build\\beep.elf verify reset exit"
 ```
@@ -54,6 +54,6 @@ Openocd -f 'C:\openocd\openocd\scripts\interface\cmsis-dap.cfg' -f 'C:\openocd\o
    }
 ```
 
-# 使用 CubeIDE 创建 STM32 项目
+## 使用 CubeIDE 创建 STM32 项目
 
 # 然后在 Vscode -> STM32 -> Import Project
