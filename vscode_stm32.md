@@ -4,6 +4,10 @@
 # 安装 OpenOCD
 > [[官网]](https://openocd.org/pages/getting-openocd.html) 烧录和调试工具
 
+* 在 OpenOCD 安装目录 `openocd\scripts\interface` 下存放了调试器配置 stlinklink/smsis-dap 
+* 在 OpenOCD 安装目录 `openocd\scripts\target` 下存放了芯片配置对应相关的处理器内核
+
+
 # 安装 ToolChain
 > [[官网]](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) 编译和调试工具链
 
