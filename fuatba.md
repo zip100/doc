@@ -1,4 +1,4 @@
-[futaba](assets/futaba.png)
+![futaba](assets/futaba.png)
 
 ## Futaba Subs S.I/F 系统
 T16SZ 发射机采用了双向通信系统`FASSTest`。接收器的数据可以在发射器中检查。FASSTest 是一个最多 18 个通道的 2.4GHz 专用系统。
