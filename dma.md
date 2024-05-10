@@ -1,3 +1,10 @@
+
+```mermaid
+graph TD;
+    BatchDate-->|Y|B;
+    A-->|N|C;
+```
+
 ```c
 /**
   * Enable DMA controller clock
